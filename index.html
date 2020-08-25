@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/348e023320.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/style.css" type="text/css">
+    <script src="./web3.js"></script>
+    <script src="./client/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+    <div class='container1'>
+        <div id="box1" class="sbox">
+            <h2>$<span id="clientsCapital"></span></h2>
+            <h3>Total Client's Capital</h3>
+        </div>
+        <div id="box2" class="sbox">
+            <h2 id="tokenBalance"><span id="creditsValue"></span> Ethereum Credits</h3>
+            <span>Your Ethereum Credit's <br> Value:</span>
+            $<span id="creditsUsd"></span>
+
+        </div>
+        <div id="box3" class="sbox">
+            <div>
+                <h2>$<span id="dividend"></span></h2>
+                <span>Your Dividend's Earning<br>Value:<span id="dividendEth"></span> ETH</span><br>
+            </div>
+            <div>
+                <h2>$<span id="earning"></span></h2>
+                <span>Your Referral's Earning <br> Value:<span id="refEth"></span> ETH</span><br>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box">
+    <div class="container1">
+        <div id="box4" class="lbox">
+            <h2>Buy Ethereum Credits <br>(10% Dividend Distribution)</h2><br>
+            <div>
+                <i class="fab fa-ethereum icon"></i>
+                <input type="number" placeholder="Amount in Ethereum" id="buyInput">
+            </div>
+            <p>Buy Price</p>
+            <span id="buyPriceEth"></span> ETH| $<span id="buyPriceUsd"></span><br>
+            <button id="buyToken">Buy Ethereum Credits</button>
+        </div>
+        <div id="box5" class="lbox">
+            <h2>Sell Ethereum Credits <br>(10% Dividend Distribution)</h2><br>
+            <div>
+                <I class="fab fa-ethereum icon"></I>
+                <input type="number" placeholder="Amount in Tokens" id='sellInput'>
+            </div>
+            <p>Sell Price</p>
+            <span id="sellPriceEth"></span> ETH| $<span id="sellPriceUsd"></span><br>
+            <button id="sellToken">Sell Ethereum Credits</button>
+        </div>
+        <div id="box6" class="lbox">
+            <div class="dividendTab">
+            <div>
+                $<span id="dividendUsd"></span>
+                <p>Your Total Dividend <br> Value: <span id="totalDividend"></span> ETH</p>
+            </div>
+            <div><i class="fas fa-coins fa-w-16 fa-5x txt-blue"></i></div>
+            <div></div>
+            <div><i class="fab fa-ethereum fa-w-16 fa-5x txt-blue"></i></div>
+        </div>
+            <div id='buttons' class="dividendTab">
+                <button id='withdraw'><i class="fas fa-rocket"></i> Withdraw</button>
+                <button id="reinvest"><i class="fas fa-rocket"></i> Reinvest</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

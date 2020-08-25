@@ -1,0 +1,116 @@
+body{
+    font-size: 13px;
+    margin-top: 10px;
+    background-color: rgb(236, 231, 231);
+}
+h2{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #0357dd;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#box3{
+    display: flex;
+    justify-content: space-around;
+}
+#box3 > div {
+    flex-basis: 40%;
+}
+.sbox{
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    margin: 10px;
+    align-self: auto;
+    text-align: center;
+    height: 100px;
+}
+
+.lbox{
+    color: black;
+    background-color: white;
+    margin: 10px;
+    align-self: auto;
+    text-align: center;
+    height: 270px;
+}
+.dividendTab{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dividendTab > div{
+    flex-basis: 40%;
+    line-height: 1rem;
+    padding-top: 30px;
+
+}
+.dividendTab > button {
+    width: 45%;
+}
+button{
+    color: #fff;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #0357dd;
+    width: 95%;
+}
+input{
+    width: 75%;
+    margin-left: 0;
+    height: 30px;
+    border: rgba(100, 100, 102, 0.514) 1px solid;
+}
+#buttons{
+    padding-top: 20px;
+}
+#buyToken{
+    margin-top: 30px;
+}
+#sellToken{
+    margin-top: 30px;
+}
+.icon{
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(209, 202, 202, 0.616);
+    padding: 11.5px;
+    margin-right: 0;
+    transform: translate(4px);
+}
+
+@media(min-width:888px){
+    .container1 > div {
+        flex-basis: 31%;
+    }
+}
+@media(max-width:887px){
+    .container1 > div {
+        flex-basis: 45%;
+    }
+}
+@media(max-width:700px){
+    .container1 > div {
+        flex-basis: 100%;
+    }
+}
+.txt-blue{
+    color: #0357dd;
+}

@@ -1,4 +1,4 @@
-const address = '0xE67C25cF5BCc05439E44216C45Df99Ad01f4CF96';
+const address = '0xdae773b919134e37ad405817a2a069d7621d6d6b';
 const abi =[
 	{
 		"inputs": [
@@ -225,28 +225,8 @@ const abi =[
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "withdrawAdmin",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"stateMutability": "payable",
 		"type": "receive"
-	},
-	{
-		"inputs": [],
-		"name": "balance",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
 	},
 	{
 		"inputs": [

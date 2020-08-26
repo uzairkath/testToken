@@ -520,8 +520,10 @@ const initApp = () => {
   console.log(accounts);
   
   const $clientsCapital = document.getElementById('clientsCapital');
+  const $capital = document.getElementById('capital');
   token.methods.totalEthereumBalance().call().then( result =>{
-    $clientsCapital.innerHTML = Math.round(((result/1e18) * ethPrice) * 100) /100;
+	$clientsCapital.innerHTML = Math.round(((result/1e18) * ethPrice) * 100) /100;
+	$capital.innerHTML = Math.round((result/1e18) * 100) /100;
   });
   const $creditsValue = document.getElementById('creditsValue');
   const $creditsUsd = document.getElementById('creditsUsd');
@@ -551,7 +553,10 @@ const initApp = () => {
     e.preventDefault();
     token.methods.buy('0x0000000000000000000000000000000000000000')
     .send({from: accounts[0], value: $buyInput * 1000000000000000000})
-    .then(console.log);
+    .then(result_ => {
+		console.log(result_);
+		location.reload();
+	});
 
   })
   const $sellEth = document.getElementById('sellPriceEth');
@@ -567,7 +572,10 @@ const initApp = () => {
     const $sellInput = document.getElementById('sellInput').value;
     token.methods.sell($sellInput)
     .send({from: accounts[0]})
-    .then(console.log);
+    .then(result_=> {
+		console.log(result_);
+		location.reload();
+	});
     
   })
   token.methods.balanceOf(accounts[0]).call().then(result=>{
@@ -597,13 +605,15 @@ const initApp = () => {
   $withdraw.addEventListener('click', e => {
     token.methods.withdraw().send({from: accounts[0]})
     .then(result => {
-      console.log(result);
+	  console.log(result);
+	  location.reload();
 	});
   $reinvest.addEventListener('click', e => {
 	  e.preventDefault();
 	  token.methods.reinvest().send({from: accounts[0]})
 	  .then(result => {
 		console.log(result);
+		location.reload();
 	  })
   })
     

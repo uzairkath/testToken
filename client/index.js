@@ -523,7 +523,7 @@ const initApp = () => {
   const $capital = document.getElementById('capital');
   token.methods.totalEthereumBalance().call().then( result =>{
 	$clientsCapital.innerHTML = Math.round(((result/1e18) * ethPrice) * 100) /100;
-	$capital.innerHTML = Math.round((result/1e18) * 100) /100;
+	$capital.innerHTML = Math.round((result/1e18) * 1e6) /1e6;
   });
   const $creditsValue = document.getElementById('creditsValue');
   const $creditsUsd = document.getElementById('creditsUsd');

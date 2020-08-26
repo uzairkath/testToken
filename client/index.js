@@ -608,16 +608,18 @@ const initApp = () => {
 	  console.log(result);
 	  location.reload();
 	});
+})
   $reinvest.addEventListener('click', e => {
 	  e.preventDefault();
 	  token.methods.reinvest().send({from: accounts[0]})
 	  .then(result => {
-		console.log(result);
-		location.reload();
+		location.reload().then(
+			console.log(result)
+		)
+
 	  })
   })
     
-  })
   console.log(accounts[0])
 })
 };

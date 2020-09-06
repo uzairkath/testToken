@@ -1,12 +1,12 @@
 body{
     font-size: 13px;
     margin-top: 10px;
-    background-color: rgb(236, 231, 231);
+    background-color: rgb(0, 0, 0);
 }
 h2{
     font-size: 20px;
     margin-top: 15px;
-    color: #0357dd;
+    color: #78C238;
 }
 
 .container1{
@@ -31,17 +31,17 @@ h2{
 }
 .sbox{
     margin-top: 10px;
-    color: black;
-    background-color: white;
+    color: #78C238;
+    background-color: #4e4a4a;
     margin: 10px;
     align-self: auto;
     text-align: center;
-    height: 100px;
+    height: 120px;
 }
 
 .lbox{
-    color: black;
-    background-color: white;
+    color: #78C238;
+    background-color: #4e4a4a;
     margin: 10px;
     align-self: auto;
     text-align: center;
@@ -62,14 +62,14 @@ h2{
     width: 45%;
 }
 button{
-    color: #fff;
+    color: #000000;
     padding: 10px 25px;
     text-transform: capitalize;
     border-radius: 2px;
     outline: none;
     box-shadow: none;
     border: none;
-    background-color: #0357dd;
+    background-color: #78C238;
     width: 95%;
 }
 input{
@@ -77,6 +77,8 @@ input{
     margin-left: 0;
     height: 30px;
     border: rgba(100, 100, 102, 0.514) 1px solid;
+    background-color: #2b2727;
+    color: #7c7676;
 }
 #buttons{
     padding-top: 20px;
@@ -112,5 +114,5 @@ input{
     }
 }
 .txt-blue{
-    color: #0357dd;
+    color: #78C238;
 }
